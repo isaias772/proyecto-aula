@@ -1,0 +1,85 @@
+@startuml
+class usuario{
+-usuario
+-password
+-id_empledo
+
+-guardar()
+-buscar()
+-modificar()        
+-eliminar()
+}
+
+class objetivos {
+   -string code;
+-nombre objetivos()
+-ciudad()
+-direccion()
+-nombre en cargado()
+
+-guardar()
+-buscar()
+-modificar()
+-imprimir()
+-eliminar()
+}
+
+class deducciones{
+-id_deducion:
+-id empleado:
+-fechadeducion:
+-tipodeduccion:
+-detalle:
+-monto:
+
+-guardar()
+-buscar()
+-modificar()
+-imprimir()
+}
+
+class nomina{
+-nolnss:
+-no_cedula:
+-empleado:
+-nombrecargo:
+-salariobase:
+-salarioquincenal:
+-horas extras:
+-inss laboral:
+-inss patronal:
+-ir:
+-deducciones:
+-total-deducciones:
+-salario-neto:
+
+-calcular()
+-imprimir()
+-guardar()
+}
+class empleado{
+-nocedula:
+-idcargo:
+-pnombre:
+-papellido:
+-notelefono:
+-celular:
+
+-guardar:
+-buscar:
+-modificar:
+-imprimir:
+}
+class cargo{
+-idcargo:
+-nombrecargo:
+-descripcion:
+-salriobase:
+
+-guarda:
+-buscar:
+-modificar:
+-imprimir:
+eliminar:
+}
+@enduml
